@@ -1,0 +1,13 @@
+body {
+      background-color:black;
+}
+
+h1 {
+      color: white;
+      margin-left: 20px;
+}
+#paragraph { color: red;
+             margin-left: 10px;
+             text-align: justify; }
+p { font-size: larger;
+    color: #fff; }             

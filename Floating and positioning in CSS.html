@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>floating and positioning</title>
+    
+    <style >
+        em { position: relative;
+                    top: 30px;  
+                    left: 60px;  
+                    background-color: fuchsia;     }
+         
+        body { background-color: aqua; background-image: C:\Users\SAHIL\Desktop\Desktop-Wallpaper-4.jpg;  }
+        body { font-size: larger;}
+        #fixed { position: fixed;}
+        strong {position: absolute;
+             bottom: 10px;  
+             right: 30px;
+             background-color: rgb(66, 248, 10);}
+    </style>
+</head>
+<body>
+    <p> Relative positioning moves <em>the box relative to</em> its original position in the flow. The distinctive behavior of relative positioning is that the space the element would have occupied in the normal flow is preserved as an empty space.
+    </p><br><br><br><br><br>
+<hr>
+    <p>Absolutely positioned elements are removed from the document flow <strong>entirely and positioned with </strong>respect to the browser window or a containing element (we’ll talk more about this later). Unlike relatively positioned elements, the space they would have occupied is closed up. In fact, they have no influence at all on the layout of surrounding elements.
+    </p><br><br><br><br>
+<hr>
+    <p id="fixed">The distinguishing characteristic of fixed positioning is that the element stays in one position in the window even when the document scrolls. Fixed elements are removed from the document flow and positioned relative to the browser window (or other viewport) rather than another element in the document. It currently causes some hiccups on mobile devices, as discussed later in this chapter. 
+    </p><br><br><br><br>
+<hr>
+     <p>This is the normal positioning scheme in which elements are positioned as they occur in the normal document flow.The CSS2.1 Recommendation states, “The position and size of an element’s box(es) are sometimes calculated relative to a certain rectangle, called the containing block of the element.” It is critical to have an awareness of the containing block of the element you want to position. We sometimes refer to this as the positioning context. The recommendation lays out a number of intricate rules for determining the containing block of an element, but it basically boils down to this: •	If the positioned element is not contained within another positioned element, then it will be placed relative to the initial containing block (created by the html element). •	But if the element has an ancestor (i.e., is contained within an element) that has its position set to relative, absolute, or fixed, the element will be positioned relative to the edges of that element instead. 
+    </p><br>
+
+    </body>
+</html>
